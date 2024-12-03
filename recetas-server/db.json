@@ -1,0 +1,251 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "John Doe",
+      "email": "john.due@gmail.com"
+    }
+  ],
+  "recetas": [
+    {
+      "id": "1",
+      "nombre": "Ensalada Cesar",
+      "categoria": "Ensalada",
+      "tiempoPreparacion": "5 minutos",
+      "instrucciones":[
+        "Prepararamos primero los picatostes caseros. Para ello precalentamos el horno a 180°c.",
+        "Frotamos el pan con un diente de ajo y lo cortamos en dados.",
+        "Aderezamos el pan con un poco de aceite de oliva y los horneamos durante 5 minutos hasta que estén dorados.",
+        "Para el aderezo, hacemos puré el diente de ajo que habíamos usado para frotar el pan y lo mezclamos con el aceite,la salsa Perrins, el zumo de limón, una cucharada de vinagre y la yema de huevo. Batimos bien hasta emulsionar y lo reservamos.",
+        "Con la verdura desinfectada echamos el aliño o salsa César por encima de las barcas u hojas de lechuga romana. Completamos rellenando las hojas con algunos picatostes y rallamos en el momento el queso parmesano por encima"
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Spaghetti Bolognese",
+      "categoria": "Sopa",
+      "tiempoPreparacion": "30 minutos",
+      "instrucciones": [
+        "Para preparar la salsa boloñesa necesitamos colocar una cacerola en el fuego y calentar en ella un chorro generoso de aceite de oliva virgen extra. Cuando lo tengamos listo, echamos el diente de ajo, previamente pelado y laminado, hasta que coja calor. Entonces, echamos la cebolla, bien picadita, y dejamos que se poche.",
+        "Cuando la cebolla ha cogido color, echamos el tomate triturado y bajamos el fuego para que se haga sin poner la cocina patas arriba. Pasados un par de minutos, echamos la sal al gusto juntos con una cucharada de azúcar para quitar la acidez del tomate, y un poquito de orégano y perejil. Removemos bien todo y dejamos que el tomate se cueza unos 15 minutos con el fuego bajo.",
+        "En un bol aparte mezclamos la carne picada con el zumo de medio limón, y lo aderezamos con un poquito de perejil y sal al gusto. Ponemos aceite de oliva virgen extra en una sartén y, cuando esté caliente, echamos la carne en ella y la dejamos hasta que esté doradita pero no hecha del todo.",
+        "Entonces, echamos la carne en la cacerola con la salsa de tomate y dejamos que termine de hacerse a fuego lento",
+        "Mientras, vamos cociendo los espaguetis en una cacerola con agua abundante y un poquito de sal al gusto. Cuando estén al dente, los escurrimos y los echamos en la cacerola de salsa boloñesa para que cojan todo el sabor de la carne y del tomate."
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Pollo al Curry",
+      "categoria": "Plato principal",
+      "tiempoPreparacion": "1 hora",
+      "instrucciones": [
+        "Lo primero es tener preparados todos los ingredientes. Cortar el pollo en piezas de un bocado. Picar la cebolleta y muy fino el diente de ajo, el jengibre y la guindilla sin las semillas, si la usamos. Si usamos cebolla troceada congelada ahorraremos aún más tiempo.",
+        "Calentar un poco de aceite en una sartén o cazuela y freír la cebolleta 2 minutos. Agregar el ajo, el jengibre y la guindilla, dar unas vueltas e incorporar el tomate. Pasado 1 minuto, agregar todas las especias y remover bien.",
+        "Incorporar el pollo, salpimentar y mezclar. Cocinar a fuego fuerte unos pocos minutos, hasta que esté dorado por todas partes. Cubrir con la leche de coco o nata y dejar reducir ligeramente. Servir con perejil o cilantro fresco picado."
+      ]
+    },
+    {
+      "id": "4",
+      "nombre": "Tacos al Pastor",
+      "categoria": "Plato principal",
+      "tiempoPreparacion": "1 hora y 30 minutos",
+      "instrucciones": [
+        "Cortamos la carne de cerdo en trozos de unos 2 cm. En un recipiente hondo mezclamos la cayena molida, la pasta de achiote, el ajo en polvo, el orégano, el comino, el vinagre, el zumo de piña y una pizca de sal y pimienta.  Añadimos la carne y removemos bien para que se impregne del adobo. Marinamos, en la nevera, durante un par de horas.",
+        "Precalentamos el horno a 180º C para que coja temperatura mientras montamos una brochetas. Cortamos la piña en dados de un tamaño similar a los trozos de carne. Ensartamos la piña y el cerdo, alternando ambos, en varias brochetas de madera. Colocamos sobre una bandeja de horno cubierta con papel de horno y cocemos durante 10-15 minutos o hasta que la carne esté dorada.",
+        "Cuando la carne esté lista, la sacamos del horno y dejamos reposar unos minutos. Mientras tanto cortamos la cebolla en pequeños trozos y calentamos las tortillas en una sartén. Retiramos las brochetas y cortamos la carne y la piña en trozos pequeños. Servimos sobre las tortillas, con unos trozos de cebolla, un poco de cilantro fresco y unos gajos de lima."
+      ]
+    },
+    {
+      "id": "5",
+      "nombre": "Cheesecake",
+      "categoria": "Postre",
+      "tiempoPreparacion": "1 hora",
+      "instrucciones": [
+        "Para la base, mezcla la mantequilla con las galletas; vacía en un molde para pay y cubre el fondo con la mezcla de galleta.",
+        "Para el relleno, bate el queso crema hasta que esté suave, agrega la Leche Condensada, la Media Crema, la ralladura y el jugo de limón; con la batidora encendida agrega la grenetina poco a poco. Vierte sobre la base y refrigera durante 2 horas o hasta que esté firme.",
+        "Decora con las fresas y refrigera por 30 minutos más."
+      ]
+    },
+    {
+      "id": "6",
+      "nombre": "Sushi",
+      "categoria": "Plato principal",
+      "tiempoPreparacion": "2 horas",
+      "instrucciones": [
+        "Coceremos el arroz (tipo glutinoso o especial para sushi) y después enfriarlo con un abanico tras aliñarlo con vinagre, azúcar y sal.",
+        "Prepararamos una juliana de aguacate y haremos lo mismo con el pepino para tenerlo listo cuando vayamos a formar los makis.",
+        "Cortamos el salmón eligiendo la zona de la ventresca para darle unos cortes en tiras.",
+        "Cortamos la hoja de alga nori en dos, la ponemos sobre una esterilla o makisu forrada de film transparente de cocina dejando el lado rugoso arriba, y sobre ella extendemos el arroz presionando un poco para que se adhiera.En el centro del arroz, colocamos las tiras de pescado, el pepino y el aguacate y opcionalmente, un poco de wasabi, si nos gusta el toque picante de este condimento.",
+        "Ya solo falta enrollar el alga ayudados con la esterilla y formar un cilindro. A la hora de servirlo hay que cortarlo en 8 porciones, ayudados de un cuchillo humedecido para que no se nos quede pegado el arroz."
+      ]
+    },
+    {
+      "id": "7",
+      "nombre": "Atole",
+      "categoria": "Bebida",
+      "tiempoPreparacion": "45 minutos",
+      "instrucciones": [
+        "Calienta el agua con la canela; al hervor agrega la masa previamente disuelta y el Chocolate Granulado. Mueve constantemente hasta que se disuelva el chocolate.",
+        "Agrega la Leche Condensada y la Leche Evaporada; deja hervir por 10 minutos, retira del fuego y cuela. Sirve caliente en jarritos de barro."
+      ]
+    },
+    {
+      "id": "8",
+      "nombre": "Lasagna",
+      "categoria": "Plato principal",
+      "tiempoPreparacion": "1 hora",
+      "instrucciones": [
+        "Para la salsa, licúa el puré de tomate con las hierbas finas, el agua y el Concentrado de Tomate con Pollo; cocina hasta que espese ligeramente.",
+        "Para el relleno, calienta 2 cucharadas de aceite, fríe la cebolla con el ajo hasta que cambien de color, agrega la carne, el Jugo, la Salsa Tipo Inglesa y la sal con cebolla; cocina por 8 minutos o hasta que la carne esté cocida.",
+        "En una sartén, unta el aceite restante, vierte un poco de la salsa, añade una capa de 3 láminas de pasta, una de relleno, otra de salsa y una más de queso; repite el procedimiento hasta terminar con el resto de los ingredientes. Tapa y cocina a fuego bajo por 17 minutos. Decora con el perejil y ofrece."
+      ]
+    },
+    {
+      "id": "9",
+      "nombre": "Mil hojas",
+      "categoria": "Postre",
+      "tiempoPreparacion": "2 horas",
+      "instrucciones": [
+        "Horno precalentado a 180 °C.",
+        "Extiende la pasta hojaldre sobre una mesa enharinada con ayuda de un rodillo, forma 3 rectángulos de 20 cm x 15 cm, coloca cada rectángulo sobre una charola engrasada y enharinada, barniza con el huevo, espolvorea un poco de azúcar y hornea a 180 °C de 20 a 25 minutos, deja enfriar.",
+        "Para la crema pastelera, calienta el agua con la Leche Condensada hasta que suelte el primer hervor. Aparte, mezcla las yemas con la esencia de vainilla y la fécula de maíz. Vierte poco a poco sin dejar de mover a la mezcla anterior y cocina hasta que espese ligeramente moviendo constantemente para evitar que se pegue; deja enfriar y refrigera por 1 hora. Para el glaseado, mezcla el azúcar glass con el jugo de limón y 2 cucharadas de agua hasta integrar por completo.",
+        "Forma el pastel colocando una capa de pasta hojaldre, unta con un poco de crema pastelera y repite el procedimiento hasta terminar con una capa de pasta. Cubre la superficie del pastel con el glaseado y decora con líneas de chocolate, ofrece."
+      ]
+    },
+    {
+      "id": "10",
+      "nombre": "Poutine",
+      "categoria": "Aperitivo",
+      "tiempoPreparacion": "30 minutos",
+      "instrucciones": [
+        "Corta las papas en tiras.",
+        "Calienta una olla con aceite para freír a fuego alto. Una vez que el aceite esté listo, sumerge una porción de las tiras de papa en la olla. Mantenlas friéndose de 2 a 4 minutos.",
+        "Saca las papas de la olla y colócalas sobre papel de cocina.",
+        "Repite los últimos pasos hasta que todas las papas cortadas estén fritas. Reserva.",
+        "Derrite mantequilla en un sartén a fuego medio-alto.",
+        "Antes de que la mantequilla esté totalmente derretida, agrega la harina y mezcla los ingredientes hasta que se forme una preparacion dorada.",
+        "Vierte el caldo de carne poco a poco. No dejes de revolver la mezcla para evitar que se formen grumos.",
+        "Cocina la salsa gravy a fuego medio-bajo hasta que se espese. Sazona con sal y pimienta.",
+        "Sirve las papas fritas de acuerdo a las porciones deseadas. Añade sal y pedazos de queso cheddar al gusto.",
+        "Vierte la salsa gravy, mientras sigue caliente, sobre las papas."
+      ]
+    },
+    {
+      "id": "11",
+      "nombre": "Pasta Carbonara",
+      "categoria": "Sopa",
+      "tiempoPreparacion": "45 minutos",
+      "instrucciones": [
+        "Bata las yemas en un bol con una pizca de sal y 1/3 del queso Manchego.",
+        "Ponga a calentar una sartén con aceite a fuego medio y en cuanto esté caliente incorpore la careta de cerdo (o panceta) cortada a tiras; cuézala durante unos minutos, hasta que se dore.",
+        "Mientras tanto, cueza la pasta en abundante agua hirviendo y salada y, una vez transcurrido el tiempo de cocción indicado en el paquete, cuele la pasta, viértala en la sartén con la careta de cerdo (o panceta), mézclelo bien y, con el fuego apagado, añada las yemas batidas con un par de cucharadas del agua de cocción de la pasta; mézclelo durante unos 30 segundos.",
+        "Añada el queso Manchego (o Pecorino) que queda, mézclelo y sírvalo inmediatamente con abundante pimienta negra molida."
+      ]
+    },
+    {
+      "id": "12",
+      "nombre": "Pollo a la Naranja",
+      "categoria": "Plato principal",
+      "tiempoPreparacion": "2 horas",
+      "instrucciones": [
+        "Para el pollo, mezcla la sal con ajo, la pimienta, 1 taza de fécula, la harina, los huevos y la Leche Evaporada, bate perfectamente hasta integrar por completo. Añade el pollo y mezcla; refrigera por 1 hora. Fríe el pollo en el aceite caliente y coloca en papel absorbente para retirar el exceso de grasa.",
+        "Para la salsa de naranja, calienta el aceite, fríe ligeramente el jengibre, el ajo y las hojuelas de chile. Añade el azúcar, el vinagre, el jugo de naranja y la Salsa de Soya; calienta hasta que hierva, agrega la fécula de maíz previamente disuelta y el aceite de ajonjolí; cocina hasta que espese ligeramente.",
+        "Sirve el pollo con la salsa, decora con el ajonjolí y el cebollín, ofrece."
+      ]
+    },
+    {
+      "id": "13",
+      "nombre": "Spaghetti Pesto",
+      "categoria": "Sopa",
+      "tiempoPreparacion": "1 hora",
+      "instrucciones": [
+        "Para el pesto, licúa las hojas de albahaca con el perejil, el consomé de pollo, la sal con ajo, el aceite de oliva y las nueces. Añade la Media Crema y mezcla perfectamente.",
+        "En una sartén, calienta la mantequilla con el espagueti previamente cocido y escurrido; agrega lo que licuaste y cocina durante 5 minutos a fuego medio moviendo ocasionalmente.",
+        "Sirve, decora con nueces y hojas de albahaca. Ofrece."
+      ]
+    },
+    {
+      "id": "14",
+      "nombre": "Mousse de Chocolate",
+      "categoria": "Postre",
+      "tiempoPreparacion": "2 horas",
+      "instrucciones": [
+        "Mezcla el Chocolate para Mesa con la Media Crema y funde a baño María hasta que se disuelva por completo.",
+        "Bate la crema hasta que se formen picos; añade la preparacion anterior y la grenetina previamente disuelta y mezcla con movimientos envolvente.",
+        "Vierte la mezcla en copas y refrigera; decora con Chocolate en Polvo Granulado."
+      ]
+    },
+    {
+      "id": "15",
+      "nombre": "Crema de espinaca",
+      "categoria": "Sopa",
+      "tiempoPreparacion": "1 hora",
+      "instrucciones": [
+        "Calienta la mantequilla y fríe la cebolla hasta que este ligeramente transparente. Agrega las espinacas y cocina por 5 minutos.",
+        "Licúa las espinacas con la Leche Evaporada, la Media Crema, el agua, la sal, la pimienta y la fécula disuelta. Cocina por 8 minutos a fuego bajo o hasta que espese ligeramente."
+      ]
+    },
+    {
+      "id": "16",
+      "nombre": "Arepas",
+      "categoria": "Aperitivo",
+      "tiempoPreparacion": "1 hora",
+      "instrucciones": [
+        "Combine la harina de maíz, el agua, el queso, la leche y la sal, mezclando minuciosamente. Deje reposar la mezcla aproximadamente 5 minutos.",
+        "Prepare las arepas para 18 disco, cada una de aproximadamente 3 pulgadas de diámetro y 1/4 pulgada de gruesa.",
+        "Caliente levemente engrasada con mantequilla. Fría las arepas en grupos hasta que estén crujientes y doradas por ambos lados."
+      ]
+    },
+    {
+      "id": "17",
+      "nombre": "Ratatouille",
+      "categoria": "Plato principal",
+      "tiempoPreparacion": "1 hora",
+      "instrucciones": [
+        "Con ayuda de un cuchillo, corta la berenjena en rodajas de grosor mediano. Coloca las rodajas en un recipiente amplio, vierte el agua y la sal de grano.",
+        "Deja reposar por 20 minutos. Durante este tiempo notarás que la berenjena comenzará a soltar un jugo de color obscuro; esta acción se conoce cómo desflemar y ayuda a que la consistencia del vegetal se vuelva más suave y su sabor se vuelva menos fuerte. Escurre, enjuaga y reserva.",
+        "Corta el jitomate y la calabaza en rodajas de grosor mediano y reserva.",
+        "Precalienta el horno a 180 °C.",
+        "En un molde circular vierte y distribuye el aceite de oliva, la salsa de tomate preparada y la albahaca. Acomoda una rodaja de berenjena, una de tomate y una de calabaza una tras otra alternadamente hasta llenar el molde; comienza de afuera hacia adentro, esto ayudará a darle la forma deseada. Sazona con sal y pimienta.",
+        "Hornea por 35 minutos, a 190 °C. La idea principal es dejar que la verdura comience a rostizarse",
+        "Decora con albahaca y disfruta."
+      ]
+    },
+    {
+      "id": "18",
+      "nombre": "Pastel tres leches",
+      "categoria": "Postre",
+      "tiempoPreparacion": "2 horas",
+      "instrucciones": [
+        "Horno precalentado a 180 °C.",
+        "Para el bizcocho, bate las claras a punto de turrón, añade el azúcar, la esencia de vainilla y las yemas una a una. Añade de forma envolvente la harina de trigo, el polvo para hornear y mezcla hasta integrar. Vierte sobre un molde de 22 cm engrasado y enharinado; hornea a 180 °C de 30 a 35 minutos o hasta que al introducir un palillo este salga limpio.",
+        "Para las 3 leches, mezcla la Leche Condensada con la Media Crema, la Leche Evaporada y el brandy. Desmolda el bizcocho, pica la superficie con un palillo y baña con la mezcla de tres leches",
+        "Para la cobertura, bate la crema con el azúcar glass hasta que doble su volumen. Cubre el pastel con la preparacion anterior y refrigera por 2 horas. Decora con frutos."
+      ]
+    },
+    {
+      "id": "19",
+      "nombre": "Fettuccine Alfredo",
+      "categoria": "Sopa",
+      "tiempoPreparacion": "45 minutos",
+      "instrucciones": [
+        "Coloca suficiente agua en una olla para cocinar los fideos, agrega sal y lleva a hervir.",
+        "Una vez hirviendo añade la pasta, cocínala siguiendo las indicaciones del empaque. Prepara una sartén grande en otra hornilla a fuego medio.",
+        "Derrite la mantequilla en la sartén caliente, añade la Crema de Leche y baja el fuego. Deja hervir hasta que la crema se reduzca ligeramente y añade el queso parmesano.",
+        "Con una espátula remueve derritiendo el queso, sazona con perejil picado y Pimienta Negra recién molida",
+        "Una vez lista la pasta, drénala y colócala sobre la salsa. Mezcla bien hasta que la salsa cubra la pasta y sirve enseguida. Decora con perejil y queso parmesano adicional."
+      ]
+    },
+    {
+      "id": "20",
+      "nombre": "Carlota de Limon",
+      "categoria": "Postre",
+      "tiempoPreparacion": "30 minutos",
+      "instrucciones": [
+        "Licúa la Leche Condensada LA LECHERA® con la Leche Evaporada y sin dejar de licuar, agrega poco a poco el jugo de limón.",
+        "En un refractario cuadrado, coloca una capa de galletas, un poco de la mezcla de limón y repite hasta terminar con el resto de los ingredientes. Cubre con plástico adherente y refrigera por 1 hora o hasta que esté firme.",
+        "Decora con las rodajas de limón, las galletas troceadas, las hojas de menta y la ralladura de limón. Ofrece."
+      ]
+    }
+  ]
+}

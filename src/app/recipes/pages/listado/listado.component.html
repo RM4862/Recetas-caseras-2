@@ -1,0 +1,20 @@
+<h1>Listado de recetas</h1>
+<mat-divider></mat-divider>
+<br>
+
+<div fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px">
+
+  <div fxFlex="20"
+    fxFlex.lg="15"
+    fxFlez.sm="30"
+    *ngFor="let receta of recetas">
+
+    <app-receta-tarjeta [receta]="receta"></app-receta-tarjeta>
+
+  </div>
+
+</div>
+
