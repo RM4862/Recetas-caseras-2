@@ -1,8 +1,18 @@
-export interface Receta {
-  id?:                string;
+export interface Receta{
+  id:                string;
   nombre:            string;
-  categoria:         string;
+  categoria:         Categoria;
   tiempoPreparacion: string;
+  ingredientes:      string[];
   instrucciones:     string[];
-  alt_img?:          string; //url de la imagen
+  alt_img:           string;
+}
+
+export enum Categoria {
+  Ensalada = "Ensalada",
+  Sopa = "Sopa",
+  PlatoPrincipal = "Plato principal",
+  Postre = "Postre",
+  Bebida = "Bebida",
+  Aperitivo = "Aperitivo"
 }

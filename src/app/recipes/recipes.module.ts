@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 import { RecipesRoutingModule } from './recipes-routing.module';
 import { MaterialModule } from '../material/material.module';
@@ -12,6 +14,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RecetaTarjetaComponent } from './components/receta-tarjeta/receta-tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+
 
 
 
@@ -30,7 +33,10 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
+    FormsModule,
     RecipesRoutingModule,
+    ReactiveFormsModule
+
   ]
 })
 export class RecipesModule { }

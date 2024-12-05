@@ -1,1 +1,36 @@
-<p>buscar works!</p>
+<div class="flex flex-column p-2">
+
+  <h3>Buscador</h3>
+
+  <mat-form-field>
+    <mat-label>Buscador de recetas</mat-label>
+    <input
+      type="text"
+      matInput
+      [formControl]="searchInput"
+      (input)="searchReceta()"
+      [matAutocomplete]="auto"
+    />
+
+    <mat-autocomplete autoActiveFirstOption
+      #auto="matAutocomplete"
+      (optionSelected)="onSelectedOption( $event )"
+      >
+      <mat-option *ngFor="let receta of recetas" [value]="receta">
+        {{receta.nombre }}
+      </mat-option>
+
+      <mat-option
+        *ngIf="recetas.length === 0 && searchInput.value && searchInput.value.length > 0"
+        value="">
+        No se encontró nada con el término {{ searchInput.value }}
+      </mat-option>
+    </mat-autocomplete>
+
+  </mat-form-field>
+
+
+  {{ selectedReceta | json }}
+
+
+</div>
