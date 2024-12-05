@@ -8,28 +8,16 @@ import { Categoria, Receta } from '../../interfaces/recetas.interface';
   styleUrls: ['./agregar.component.scss']
 })
 export class AgregarComponent {
-  categorias=[
-    {
-      id: 'Ensalada'
-    },
-    {
-      id: 'Sopa'
-    },
-    {
-      id: 'Plato principal'
-    },
-    {
-      id: 'Postre'
-    },
-    {
-      id: 'Bebida'
-    },
-    {
-      id: 'Aperitivo'
-    },
+  categorias = [
+    { id: 'Ensalada' },
+    { id: 'Sopa' },
+    { id: 'Plato principal' },
+    { id: 'Postre' },
+    { id: 'Bebida' },
+    { id: 'Aperitivo' },
   ];
 
-  receta: Receta={
+  receta: Receta = {
     id: '',
     nombre: '',
     categoria: Categoria.PlatoPrincipal,
@@ -37,25 +25,42 @@ export class AgregarComponent {
     ingredientes: [],
     instrucciones: [],
     alt_img: '',
-  }
+  };
 
-  constructor(private recetasService: RecetasService){}
+  nuevoIngrediente: string = ''; // Para añadir nuevos ingredientes
+  nuevaInstruccion: string = ''; // Para añadir nuevas instrucciones
 
-  ngOnInit():void{
+  constructor(private recetasService: RecetasService) {}
 
-  }
-
-  guardar(){ //funcion para boton de guardar
-    if(this.receta.nombre.trim().length===0){
+  guardar() {
+    if (this.receta.nombre.trim().length === 0) {
       return;
     }
 
-    this.recetasService.agregarReceta(this.receta)
-      .subscribe( resp=>{
-        console.log('Respuesta', resp);
-      }
-
-      )
+    this.recetasService.agregarReceta(this.receta).subscribe(resp => {
+      console.log('Respuesta', resp);
+    });
   }
 
+  agregarIngrediente() {
+    if (this.nuevoIngrediente.trim().length > 0) {
+      this.receta.ingredientes.push(this.nuevoIngrediente);
+      this.nuevoIngrediente = ''; // Limpia el campo de entrada
+    }
+  }
+
+  eliminarIngrediente(index: number) {
+    this.receta.ingredientes.splice(index, 1);
+  }
+
+  agregarInstruccion() {
+    if (this.nuevaInstruccion.trim().length > 0) {
+      this.receta.instrucciones.push(this.nuevaInstruccion);
+      this.nuevaInstruccion = ''; // Limpia el campo de entrada
+    }
+  }
+
+  eliminarInstruccion(index: number) {
+    this.receta.instrucciones.splice(index, 1);
+  }
 }
