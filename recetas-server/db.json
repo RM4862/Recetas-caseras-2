@@ -2,8 +2,8 @@
   "usuarios": [
     {
       "id": "1",
-      "usuario": "John Doe",
-      "email": "john.due@gmail.com"
+      "usuario": "regina123",
+      "email": "regina.avelinof@alumno.buap.mx"
     }
   ],
   "recetas": [
@@ -33,7 +33,7 @@
     },
     {
       "id": "2",
-      "nombre": "Spaghetti Bolognese ",
+      "nombre": "Spaghetti Bolognese",
       "categoria": "Sopa",
       "tiempoPreparacion": "30 minutos",
       "ingredientes": [
