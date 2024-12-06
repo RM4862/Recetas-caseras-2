@@ -15,6 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { RecetaTarjetaComponent } from './components/receta-tarjeta/receta-tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { ConfirmarComponent } from './components/confirmar/confirmar.component';
+import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 
 
 
@@ -29,7 +30,8 @@ import { ConfirmarComponent } from './components/confirmar/confirmar.component';
     HomeComponent,
     RecetaTarjetaComponent,
     ImagenPipe,
-    ConfirmarComponent
+    ConfirmarComponent,
+    FavoritosComponent
   ],
   imports: [
     CommonModule,

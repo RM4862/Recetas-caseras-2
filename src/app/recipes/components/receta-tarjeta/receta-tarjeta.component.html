@@ -4,6 +4,7 @@
   </mat-card-header>
 
   <img mat-card-image [src]="receta | imagen">
+
   <mat-card-subtitle><strong>Categoría: </strong>{{receta.categoria}}</mat-card-subtitle>
   <mat-card-subtitle><strong>Tiempo de preparación: </strong>{{receta.tiempoPreparacion}}</mat-card-subtitle>
 
@@ -14,11 +15,15 @@
       Leer más...
     </button>
     <button mat-button
-    color="info"
-    [routerLink]="['/recetas/editar/',receta.id]">
+      color="info"
+      [routerLink]="['/recetas/editar/',receta.id]">
       Editar
     </button>
-
+    <button mat-icon-button
+      color="accent"
+      (click)="toggleFavorite()"
+      aria-label="Favorite">
+      <mat-icon>{{ isFavorite ? 'favorite' : 'favorite_border' }}</mat-icon>
+    </button>
   </mat-card-actions>
-
 </mat-card>

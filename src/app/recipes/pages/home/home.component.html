@@ -1,13 +1,11 @@
-<!--Componente para dar estilo general a las rutas de receta-->
+<!-- Updated home.component.html -->
 <mat-sidenav-container fullscreen>
   <mat-sidenav #sidenav mode="push">
-
-    <mat-toolbar color="warn">
+     <mat-toolbar color="warn">
       <img src="../../../../assets/logo.png" class="logo">
       <span>Menú</span>
       <span class="spacer"></span>
-
-      <button mat-icon-button (click)="sidenav.toggle()">
+       <button mat-icon-button (click)="sidenav.toggle()">
           <mat-icon>menu</mat-icon>
       </button>
     </mat-toolbar>
@@ -28,6 +26,11 @@
         <span>Buscar receta</span>
       </a>
 
+      <!-- New Favorites Option -->
+      <a routerLink="./favoritos" mat-list-item (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>favorite</mat-icon>
+        <span>Mis Favoritos</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -37,20 +40,13 @@
     </button>
 
     <span class="spacer"></span>
-
     <span>{{auth.usuario}}</span>
-
-    <button mat-button
-            (click)="logout()">
+    <button mat-button (click)="logout()">
       Logout
     </button>
-
   </mat-toolbar>
 
   <div class="containerh">
     <router-outlet></router-outlet>
   </div>
-
-
-
 </mat-sidenav-container>
