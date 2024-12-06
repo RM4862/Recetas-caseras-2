@@ -1,36 +1,63 @@
-<div class="flex flex-column p-2">
-
-  <h3>Buscador</h3>
-
-  <mat-form-field>
-    <mat-label>Buscador de recetas</mat-label>
+<div class="container mx-auto p-4">
+  <div class="mb-4 flex items-center space-x-4">
+    <!-- Barra de búsqueda -->
     <input
       type="text"
-      matInput
-      [formControl]="searchInput"
-      (input)="searchReceta()"
-      [matAutocomplete]="auto"
+      [(ngModel)]="terminoBusqueda"
+      (ngModelChange)="buscarRecetas()"
+      placeholder="Buscar recetas..."
+      class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
     />
 
-    <mat-autocomplete autoActiveFirstOption
-      #auto="matAutocomplete"
-      (optionSelected)="onSelectedOption( $event )"
-      >
-      <mat-option *ngFor="let receta of recetas" [value]="receta">
-        {{receta.nombre }}
-      </mat-option>
+    <!-- Botón de limpiar -->
+    <button
+      (click)="limpiarFiltros()"
+      class="bg-gray-200 hover:bg-gray-300 p-2 rounded-md"
+    >
+      Limpiar
+    </button>
+  </div>
 
-      <mat-option
-        *ngIf="recetas.length === 0 && searchInput.value && searchInput.value.length > 0"
-        value="">
-        No se encontró nada con el término {{ searchInput.value }}
-      </mat-option>
-    </mat-autocomplete>
+  <!-- Filtros de categoría -->
+  <div class="mb-4 flex flex-wrap gap-2">
+    <button
+      *ngFor="let categoria of categorias"
+      (click)="filtrarPorCategoria(categoria)"
+      [class.bg-blue-500]="categoriaSeleccionada === categoria"
+      [class.text-white]="categoriaSeleccionada === categoria"
+      [class.bg-gray-200]="categoriaSeleccionada !== categoria"
+      class="px-3 py-1 rounded-full transition-colors"
+    >
+      {{ categoria }}
+    </button>
+  </div>
 
-  </mat-form-field>
+  <!-- Resultados de búsqueda -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div
+      *ngFor="let receta of recetasFiltradas"
+      (click)="seleccionarReceta(receta)"
+      class="border rounded-lg p-4 hover:shadow-lg transition-shadow cursor-pointer"
+    >
+      <div class="flex items-center mb-2">
+        <h3 class="text-lg font-semibold">{{ receta.nombre }}</h3>
+      </div>
+      <div class="flex justify-between items-center">
+        <span class="text-sm text-gray-600">
+          Categoría: {{ receta.categoria }}
+        </span>
+        <span class="text-sm text-gray-600">
+          Tiempo: {{ receta.tiempoPreparacion }}
+        </span>
+      </div>
+    </div>
+  </div>
 
-
-  {{ selectedReceta | json }}
-
-
+  <!-- Mensaje cuando no hay resultados -->
+  <div
+    *ngIf="recetasFiltradas.length === 0"
+    class="text-center text-gray-500 mt-8"
+  >
+    No se encontraron recetas que coincidan con tu búsqueda.
+  </div>
 </div>
