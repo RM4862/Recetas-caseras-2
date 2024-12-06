@@ -1,3 +1,7 @@
+<button mat-button color="warn" (click)="regresar()">
+  <mat-icon>arrow_back</mat-icon>
+  Regresar
+</button>
 <mat-grid-list cols="1" *ngIf="!receta; else divReceta">
   <mat-grid-tile>
     <mat-spinner></mat-spinner>
@@ -26,9 +30,6 @@
           {{ paso }}
         </li>
       </ul>
-
-      <br>
-      <button mat-button color="warn" (click)="regresar()">Regresar</button>
     </div>
   </div>
 </ng-template>

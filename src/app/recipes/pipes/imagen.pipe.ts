@@ -7,7 +7,14 @@ import { Receta } from '../interfaces/recetas.interface';
 export class ImagenPipe implements PipeTransform {
 
   transform(receta: Receta): string {
-    return `../../../assets/receta/${receta.id}.jpg`; // Cambiadas las comillas simples por backticks
+    if(!receta.id && !receta.alt_img ){
+      return 'assets/no-image.png'; //si esta vacio el campo poner imagen por defecto
+    }else if(receta.alt_img){
+      return receta.alt_img; //La URL de la imagen en internet
+    }else{
+      return `../../../assets/receta/${receta.id}.jpg`;
+    }
+
   }
 
 }

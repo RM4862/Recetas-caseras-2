@@ -31,5 +31,13 @@ export class RecetasService {
     return this.http.post<Receta>(`${ this.baseUrl }/recetas`,receta)
   }
 
+  actualizarReceta(receta:Receta): Observable<Receta>{
+    return this.http.put<Receta>(`${ this.baseUrl }/recetas/${receta.id}`,receta)
+  }
+
+  borrarReceta(id:string): Observable<any>{ //devuelve un tipo any ya que no regresa nada
+    return this.http.delete<any>(`${ this.baseUrl }/recetas/${id}`)
+  }
+
 }
 

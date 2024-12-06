@@ -1,5 +1,5 @@
 export interface Receta{
-  id:                string;
+  id?:                string; //opcional para que el backend se encargue de asignarle un id
   nombre:            string;
   categoria:         Categoria;
   tiempoPreparacion: string;

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RecetasService } from '../../services/recetas.service';
 import { Categoria, Receta } from '../../interfaces/recetas.interface';
+import { ActivatedRoute,Router } from '@angular/router';
+import {switchMap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-agregar',
@@ -18,7 +20,6 @@ export class AgregarComponent {
   ];
 
   receta: Receta = {
-    id: '',
     nombre: '',
     categoria: Categoria.PlatoPrincipal,
     tiempoPreparacion: '',
@@ -30,17 +31,49 @@ export class AgregarComponent {
   nuevoIngrediente: string = ''; // Para añadir nuevos ingredientes
   nuevaInstruccion: string = ''; // Para añadir nuevas instrucciones
 
-  constructor(private recetasService: RecetasService) {}
+  constructor(private recetasService: RecetasService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router
+  ) {}
+
+  ngOnInit():void{
+
+    if(!this.router.url.includes('editar')){
+      return;
+    }
+    this.activatedRoute.params
+    .pipe(
+      switchMap(({id})=>this.recetasService.getRecetaPorId(id))
+    )
+    .subscribe(receta=>this.receta = receta); //Devuelve la receta a editar
+  }
 
   guardar() {
     if (this.receta.nombre.trim().length === 0) {
       return;
     }
 
-    this.recetasService.agregarReceta(this.receta).subscribe(resp => {
-      console.log('Respuesta', resp);
-    });
+    if(this.receta.id){
+      //Actualizar receta
+      this.recetasService.actualizarReceta(this.receta)
+        .subscribe(receta=>console.log('Actualizando', receta))
+
+    }else {
+      //Crear receta
+      this.recetasService.agregarReceta(this.receta).subscribe(receta => {
+        this.router.navigate(['/recetas/editar',receta.id]);
+      });
+    }
+
   }
+
+   //Eliminar receta
+   borrarReceta(){
+      this.recetasService.borrarReceta(this.receta.id!)
+        .subscribe(resp=>{
+          this.router.navigate(['/recetas']);
+        });
+   }
 
   agregarIngrediente() {
     if (this.nuevoIngrediente.trim().length > 0) {
@@ -63,4 +96,10 @@ export class AgregarComponent {
   eliminarInstruccion(index: number) {
     this.receta.instrucciones.splice(index, 1);
   }
+
+  regresar() {
+    this.router.navigate(['/recetas/listado']);
+  }
+
+
 }
