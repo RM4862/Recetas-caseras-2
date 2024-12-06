@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Error404Component } from './shared/pages/error404/error404.component';
 import { RecipesModule } from './recipes/recipes.module';
+import {AuthGuard}from './auth/guards/auth.guard'
 const routes: Routes = [
   //rutas hijas
   {
@@ -11,7 +12,9 @@ const routes: Routes = [
 
   {
     path:'recetas',
-    loadChildren:() => import('./recipes/recipes.module').then(m=>m.RecipesModule)
+    loadChildren:() => import('./recipes/recipes.module').then(m=>m.RecipesModule),
+    canLoad: [AuthGuard],
+    canActivate:[AuthGuard]
   },
 
   {
