@@ -2,7 +2,11 @@
   <mat-icon>arrow_back</mat-icon>
   Regresar
 </button>
-<h1>Nueva Receta: <small>{{ receta.nombre }}</small></h1>
+<h1>
+  {{ (receta.id) ?'Editar':'Añadir nueva'}}
+  Receta:
+  <small>{{ receta.nombre }}</small>
+</h1>
 <div fxLayout="row" fxLayoutGap="40px" fxLayout.xs="column">
   <div fxFlex="50" fxLayout="column">
     <mat-form-field fx-Flex="100">
@@ -68,7 +72,7 @@
     <div fxLayout>
       <button mat-raised-button color="primary" (click)="guardar()">
         <mat-icon>edit</mat-icon>
-        Guardar
+        {{ (receta.id) ?'Actualizar':'Crear'}}
       </button>
 
       <span class="spacer"></span>

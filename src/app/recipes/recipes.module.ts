@@ -14,6 +14,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RecetaTarjetaComponent } from './components/receta-tarjeta/receta-tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 
@@ -27,7 +28,8 @@ import { ImagenPipe } from './pipes/imagen.pipe';
     ListadoComponent,
     HomeComponent,
     RecetaTarjetaComponent,
-    ImagenPipe
+    ImagenPipe,
+    ConfirmarComponent
   ],
   imports: [
     CommonModule,
