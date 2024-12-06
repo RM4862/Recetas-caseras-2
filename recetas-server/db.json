@@ -89,37 +89,43 @@
     },
     {
       "id": "4",
-      "nombre": "Tacos al Pastor",
-      "categoria": "Plato principal",
-      "tiempoPreparacion": "1 hora y 30 minutos",
-      "ingredientes": [],
+      "nombre": "Tacos al Pastor picantes",
+      "categoria": "Aperitivo",
+      "tiempoPreparacion": "2 horas",
+      "ingredientes": [
+        "huevos"
+      ],
       "instrucciones": [
         "Cortamos la carne de cerdo en trozos de unos 2 cm. En un recipiente hondo mezclamos la cayena molida, la pasta de achiote, el ajo en polvo, el orégano, el comino, el vinagre, el zumo de piña y una pizca de sal y pimienta.  Añadimos la carne y removemos bien para que se impregne del adobo. Marinamos, en la nevera, durante un par de horas.",
         "Precalentamos el horno a 180º C para que coja temperatura mientras montamos una brochetas. Cortamos la piña en dados de un tamaño similar a los trozos de carne. Ensartamos la piña y el cerdo, alternando ambos, en varias brochetas de madera. Colocamos sobre una bandeja de horno cubierta con papel de horno y cocemos durante 10-15 minutos o hasta que la carne esté dorada.",
-        "Cuando la carne esté lista, la sacamos del horno y dejamos reposar unos minutos. Mientras tanto cortamos la cebolla en pequeños trozos y calentamos las tortillas en una sartén. Retiramos las brochetas y cortamos la carne y la piña en trozos pequeños. Servimos sobre las tortillas, con unos trozos de cebolla, un poco de cilantro fresco y unos gajos de lima."
-      ]
+        "Cuando la carne esté lista, la sacamos del horno y dejamos reposar unos minutos. Mientras tanto cortamos la cebolla en pequeños trozos y calentamos las tortillas en una sartén. Retiramos las brochetas y cortamos la carne y la piña en trozos pequeños. Servimos sobre las tortillas, con unos trozos de cebolla, un poco de cilantro fresco y unos gajos de lima.",
+        "decorar"
+      ],
+      "alt_img": "https://www.gob.mx/cms/uploads/image/file/489745/plato_bien_comer_2.jpg"
     },
     {
       "id": "5",
-      "nombre": "Cheesecake",
-      "categoria": "Postre",
-      "tiempoPreparacion": "1 hora",
+      "nombre": "Cheesecake de limon",
+      "categoria": "Ensalada",
+      "tiempoPreparacion": "2 horas",
       "ingredientes": [
         "1 Barra de mantequilla derretida (90 g)",
-        "30 Galletas Marías molidas",
         "3 Paquetes de queso crema a temperatura ambiente (190 g c/u)",
         "1 Lata de Leche Condensada LA LECHERA®",
         "1 Lata de Media Crema NESTLÉ®",
         "2 Limones su ralladura",
         "2 Limones su jugo",
         "3 Sobres de grenetina (7 g c/u) hidratada en 1/4 de taza de agua y disuelta a baño María",
-        "1/4 Taza de fresas desinfectadas"
+        "1/4 Taza de fresas desinfectadas",
+        "yema de huevo "
       ],
       "instrucciones": [
         "Para la base, mezcla la mantequilla con las galletas; vacía en un molde para pay y cubre el fondo con la mezcla de galleta.",
         "Para el relleno, bate el queso crema hasta que esté suave, agrega la Leche Condensada, la Media Crema, la ralladura y el jugo de limón; con la batidora encendida agrega la grenetina poco a poco. Vierte sobre la base y refrigera durante 2 horas o hasta que esté firme.",
-        "Decora con las fresas y refrigera por 30 minutos más."
-      ]
+        "Decora con las fresas y refrigera por 30 minutos más.",
+        "decorar con menta"
+      ],
+      "alt_img": "https://www.gastrolabweb.com/u/fotografias/m/2024/2/25/f1280x720-58219_189894_5941.jpg"
     },
     {
       "id": "6",
@@ -323,23 +329,6 @@
       ]
     },
     {
-      "id": "14",
-      "nombre": "Mousse de Chocolate",
-      "categoria": "Postre",
-      "tiempoPreparacion": "2 horas",
-      "ingredientes": [
-        "1 Taza Crema para batir",
-        "2 Barras Chocolate para mesa ABUELITA® en trozos",
-        "2 Sobres Grenetina hidratada en 1/4 de taza fría y disuelta.",
-        "1 Lata Media Crema NESTLÉ®"
-      ],
-      "instrucciones": [
-        "Mezcla el Chocolate para Mesa con la Media Crema y funde a baño María hasta que se disuelva por completo.",
-        "Bate la crema hasta que se formen picos; añade la preparacion anterior y la grenetina previamente disuelta y mezcla con movimientos envolvente.",
-        "Vierte la mezcla en copas y refrigera; decora con Chocolate en Polvo Granulado."
-      ]
-    },
-    {
       "id": "15",
       "nombre": "Crema de espinaca",
       "categoria": "Sopa",
@@ -477,6 +466,23 @@
         "En un refractario cuadrado, coloca una capa de galletas, un poco de la mezcla de limón y repite hasta terminar con el resto de los ingredientes. Cubre con plástico adherente y refrigera por 1 hora o hasta que esté firme.",
         "Decora con las rodajas de limón, las galletas troceadas, las hojas de menta y la ralladura de limón. Ofrece."
       ]
+    },
+    {
+      "id": "5f88",
+      "nombre": "Pastel de chocolate",
+      "categoria": "Postre",
+      "tiempoPreparacion": "1 hora",
+      "ingredientes": [
+        "huevos",
+        "chocolate",
+        "leche"
+      ],
+      "instrucciones": [
+        "mezclar",
+        "hornear",
+        "caramelizar"
+      ],
+      "alt_img": "https://recetas.coosur.com/wp-content/uploads/sites/2/2023/11/tarta-de-chocolate-con-fresas.jpg"
     }
   ]
 }
