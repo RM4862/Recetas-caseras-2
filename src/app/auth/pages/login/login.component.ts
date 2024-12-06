@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Router} from '@angular/router'
+import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -8,18 +8,23 @@ import { AuthService } from '../../services/auth.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  constructor (private router:Router,
-              private authService : AuthService
-  ){}
-  login (){
-    this.authService.login()
-        .subscribe(resp=>{
-          console.log(resp);
+  email: string = '';
+  errorMessage: string = '';
 
-          if(resp.id){
-            this.router.navigate(['./recetas']);
-          }
-        })
-    //this.router.navigate(['./recetas'])
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ) {}
+
+  login() {
+    this.authService.login(this.email).subscribe({
+      next: (response) => {
+        this.router.navigate(['/home']);
+      },
+      error: (error) => {
+        this.errorMessage = 'Login failed. Please try again.';
+        console.error('Login error', error);
+      }
+    });
   }
 }

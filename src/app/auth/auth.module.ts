@@ -4,7 +4,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AuthRoutingModule } from './auth-routing.module';
 import { MaterialModule } from '../material/material.module'; //importamos el archivo de material
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +17,10 @@ import { MaterialModule } from '../material/material.module'; //importamos el ar
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
+    FormsModule
   ]
 })
 export class AuthModule { }
