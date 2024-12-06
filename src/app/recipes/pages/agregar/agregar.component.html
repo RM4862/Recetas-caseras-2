@@ -1,0 +1,94 @@
+<button mat-button color="warn" (click)="regresar()">
+  <mat-icon>arrow_back</mat-icon>
+  Regresar
+</button>
+<h1>
+  {{ (receta.id) ?'Editar':'Añadir nueva'}}
+  Receta:
+  <small>{{ receta.nombre }}</small>
+</h1>
+<div fxLayout="row" fxLayoutGap="40px" fxLayout.xs="column">
+  <div fxFlex="50" fxLayout="column">
+    <mat-form-field fx-Flex="100">
+      <mat-label>Nombre</mat-label>
+      <input matInput type="text" [(ngModel)]="receta.nombre" required />
+    </mat-form-field>
+
+    <mat-form-field fx-Flex="100">
+      <mat-label>Categoría</mat-label>
+      <mat-select [(ngModel)]="receta.categoria" required>
+        <mat-option *ngFor="let categoria of categorias" [value]="categoria.id">
+          {{ categoria.id }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field fx-Flex="100">
+      <mat-label>Tiempo de preparación</mat-label>
+      <input matInput type="text" [(ngModel)]="receta.tiempoPreparacion" required />
+    </mat-form-field>
+
+    <!-- Ingredientes -->
+    <div>
+      <mat-form-field fx-Flex="100">
+        <mat-label>Nuevo Ingrediente</mat-label>
+        <input matInput type="text" [(ngModel)]="nuevoIngrediente" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="agregarIngrediente()">Agregar Ingrediente</button>
+    </div>
+    <ul>
+      <li *ngFor="let ingrediente of receta.ingredientes; let i = index">
+        {{ ingrediente }}
+        <button mat-icon-button color="warn" (click)="eliminarIngrediente(i)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </li>
+    </ul>
+
+    <!-- Instrucciones -->
+    <div>
+      <mat-form-field fx-Flex="100">
+        <mat-label>Nueva Instrucción</mat-label>
+        <input matInput type="text" [(ngModel)]="nuevaInstruccion" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="agregarInstruccion()">Agregar Instrucción</button>
+    </div>
+    <ul>
+      <li *ngFor="let instruccion of receta.instrucciones; let i = index">
+        {{ instruccion }}
+        <button mat-icon-button color="warn" (click)="eliminarInstruccion(i)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </li>
+    </ul>
+
+    <mat-form-field fx-Flex="100">
+      <mat-label>Foto Url</mat-label>
+      <input matInput type="url" [(ngModel)]="receta.alt_img" required />
+    </mat-form-field>
+
+    <br />
+
+    <div fxLayout>
+      <button mat-raised-button color="primary" (click)="guardar()">
+        <mat-icon>edit</mat-icon>
+        {{ (receta.id) ?'Actualizar':'Crear'}}
+      </button>
+
+      <span class="spacer"></span>
+
+      <button *ngIf="receta.id"
+              mat-raised-button
+              (click)="borrarReceta()"
+              color="warn">
+        <mat-icon>remove</mat-icon>
+        Borrar
+      </button>
+    </div>
+
+  </div>
+
+  <div fxFlex="50">
+    <img [src]="receta | imagen">
+  </div>
+</div>

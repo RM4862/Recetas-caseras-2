@@ -1,0 +1,35 @@
+<button mat-button color="warn" (click)="regresar()">
+  <mat-icon>arrow_back</mat-icon>
+  Regresar
+</button>
+<mat-grid-list cols="1" *ngIf="!receta; else divReceta">
+  <mat-grid-tile>
+    <mat-spinner></mat-spinner>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ng-template #divReceta>
+  <div fxLayout="column" fxLayoutAlign="center">
+    <div fxFlex="50" style="padding-right: 20px;">
+      <h1>{{ receta.nombre }}<small> - {{ receta.categoria }}</small></h1>
+      <h3>Tiempo de preparación: {{ receta.tiempoPreparacion }}</h3>
+      <mat-divider></mat-divider>
+      <br>
+      <img [src]="receta | imagen" style="max-width: 100%; height: auto;">
+
+      <h1>Ingredientes</h1>
+      <ul>
+        <li *ngFor="let ingrediente of receta.ingredientes">
+          {{ ingrediente }}
+        </li>
+      </ul>
+
+      <h1>Instrucciones</h1>
+      <ul>
+        <li *ngFor="let paso of receta.instrucciones">
+          {{ paso }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</ng-template>

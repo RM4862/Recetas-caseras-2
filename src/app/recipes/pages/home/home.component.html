@@ -1,0 +1,52 @@
+<!-- Updated home.component.html -->
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav mode="push">
+     <mat-toolbar color="warn">
+      <img src="../../../../assets/logo.png" class="logo">
+      <span>Menú</span>
+      <span class="spacer"></span>
+       <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <a routerLink="./listado" mat-list-item (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>label</mat-icon>
+        <span>Listado de recetas</span>
+      </a>
+
+      <a routerLink="./agregar" mat-list-item (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>add</mat-icon>
+        <span>Añadir receta</span>
+      </a>
+
+      <a routerLink="./buscar" mat-list-item (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>search</mat-icon>
+        <span>Buscar receta</span>
+      </a>
+
+      <!-- New Favorites Option -->
+      <a routerLink="./favoritos" mat-list-item (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>favorite</mat-icon>
+        <span>Mis Favoritos</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar>
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <span class="spacer"></span>
+    <span>{{auth.usuario}}</span>
+    <button mat-button (click)="logout()">
+      Logout
+    </button>
+  </mat-toolbar>
+
+  <div class="containerh">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
